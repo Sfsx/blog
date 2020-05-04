@@ -28,6 +28,7 @@ const Head = (props: headPropTypes) => (
     <link rel="shortcut icon" href="/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="mask-icon" href="/favicon-mask.svg" color="#000000" />
+    <link rel="stylesheet" href="/iconfont.css"></link>
     <meta property="og:url" content={props.url || defaultOGURL} />
     <meta property="og:title" content={props.title || ''} />
     <meta property="og:description" content={props.description || defaultDescription} />

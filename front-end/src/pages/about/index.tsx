@@ -1,11 +1,11 @@
 import Head from 'components/head';
-import Nav from 'components/nav';
+import Header from 'components/header';
 
 export default function About() {
   return (
-    <div className="container">
+    <div>
       <Head />
-      <Nav />
+      <Header />
       <div>About</div>
     </div>
   )

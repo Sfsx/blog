@@ -1,16 +1,12 @@
 // import Link from 'next/link';
 import { useRouter } from 'next/router'
 import style from './nav.module.scss';
-
-const links = [
-  { href: '/', label: 'Home' },
-  { href: '/about', label: 'About' }
-];
+import { links } from '../config/router';
 
 const Nav = () => {
   const router = useRouter()
 
-  const handleClick = (e: any, href: string) => {
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>, href: string) => {
     e.preventDefault()
     console.log(href);
     router.push({

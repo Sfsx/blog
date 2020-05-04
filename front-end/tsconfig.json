@@ -19,14 +19,21 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "preserve",
-    "plugins": [],
+    "plugins": [
+      // {
+      //   "name": "typescript-plugin-css-modules",
+      //   "options": {
+      //     "classnameTransform": "dashes",
+      //   }
+      // }
+    ],
     "baseUrl": ".",
     "paths": {
       "components/*": ["./src/components/*"],
     }
   },
   "include": [
-    "src",
+    "src/**/*",
     "next-env.d.ts"
   ]
 }
