@@ -44,9 +44,28 @@
 }
 
 .logo {
-  font-size: 1em;
+  font-size: 1.2em;
   font-weight: 600;
   min-width: 89px;
+  text-shadow: rgba(0, 0, 0, 0.4) 0 0 0.05em;
+}
+
+@keyframes letterDancing {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(0, -0.5em, 0);
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.letter {
+  display: inline-block;
+  animation: letterDancing 1s ease-in-out 0s 1 alternate;
 }
 
 .mobileMenuIndicator {
